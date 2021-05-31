@@ -1,0 +1,53 @@
+<div ng-controller="homeController" class="container mt-5">
+    <h2 class="text-center"><img src="../assets/fly.png" style="height: 30px; width: 30px" alt=""> Detección plaga - moscas blancas</h2>
+
+    <div class="col-sm text-right">
+        <small><b>Sincronización cada 6 seg</b></small>
+    </div>
+    <div class="card text-center w-100">
+        <div class="card-body">
+            <canvas id="line" class="chart chart-line" chart-data="data"
+                    chart-options="options"
+                    chart-colors="colors"
+                    chart-labels="labels"
+                    chart-series="series">
+            </canvas>
+        </div>
+    </div>
+
+    <div class="row mt-5 justify-content-md-center">
+        <div class="col col-lg-5">
+            <div class="card text-center w-100">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm text-right">
+                            <img style="height: 80px; width: 80px" src="../assets/humidity.svg" alt="Temperatura">
+                        </div>
+                        <div class="col-sm text-left">
+                            <h2 class="mt-3" style="color: #4793ff">{{ humidity }}%</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col col-lg-2">
+
+        </div>
+        <div class="col col-lg-5">
+            <div class="card w-100">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm text-right">
+                            <img style="height: 80px; width: 80px" src="../assets/thermometer.svg" alt="Temperatura">
+                        </div>
+                        <div class="col-sm text-left">
+                            <h2 class="mt-3" style="color: #ff6e6e">{{ temperature }}°C</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
